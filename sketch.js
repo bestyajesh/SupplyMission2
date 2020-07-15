@@ -15,7 +15,6 @@ function setup() {
 	createCanvas(800, 700);
 	rectMode(CENTER);
 	
-
 	packageSprite=createSprite(width/2, 80, 10,10);
 	packageSprite.addImage(packageIMG)
 	packageSprite.scale=0.2
@@ -34,7 +33,6 @@ function setup() {
 	packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:0.4, isStatic:true});
 	World.add(world, packageBody);
 	
-
 	//Create a Ground
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
  	World.add(world, ground);
@@ -75,9 +73,7 @@ function draw() {
   packageSprite.y= packageBody.position.y 
 
   
-  drawSprites();
-  
-  
+  drawSprites();  
  
 }
 
